@@ -1,0 +1,59 @@
+<html>
+<!-- This is the Character Gallery page. Here are all the profiles for <thead>
+  characters to be featured in the game.
+</thead> -->
+<head>
+  <Title>Danganronpa: Suffering's Symphony| Home Page</Title>
+  <link rel="stylesheet" type="text/css" href="css/quiz.css">
+  <script src="js/quiz.js"></script>
+</head>
+<body onload="init()">
+
+<div id = "container";>
+
+  <header>
+    <img src="images/banner.png";alt="Danganronpa: Suffering's Symphony"; height: 20px;>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About the Game</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="quiz.html">Which DR:SS Character Are You?</a></li>
+    </ul>
+  </nav>
+  <div id="content">
+    <div id="pgMainMenu">
+      <h1>Which Danganronpa: Suffering's Symphony Character Are You?</h1>
+
+      <p>Find out which Suffering's Symphony character you're the most like with this personality quiz!</p>
+      <p id="disclaimer">*Note: this personality quiz is for entertainment purposes only and should not be used as an actual judge of character.</p>
+
+      <button id="startBttn" onclick="startQuiz()" label="Start">Start Quiz</button>
+    </div>
+
+    <div id="pgQuiz">
+
+        <h2 id ="question">Question</h2>
+          <p><input type="radio" name="answer" value="1" id="OptAnswer1"><span id="answerPos1">Answer1</span></p>
+          <p><input type="radio" name="answer" value="2" id="OptAnswer2"><span id="answerPos2">Answer2</span></p>
+          <p><input type="radio" name="answer" value="3" id="OptAnswer3"><spane id="answerPos3">Answer3</span></p>
+          <p><input type="radio" name="answer" value="4" id="OptAnswer4"><span id="answerPos4">Answer4</span></p>
+          <p><input type="radio" name="answer" value="5" id="OptAnswer5"><span id="answerPos5">Answer5</span></p>
+          <button id="bSubmit" onclick="checkAnswer()">Next Question</button>
+          <button id="bReset" onclick="resetQuiz()">Start Over</button>
+        </div>
+      <div id="quizResults">
+        <h1>Results</h1>
+        <p>You are most like:<br></p>
+        <h2 id="characterRes">Character<br></h2>
+        <img class="displayed" id="characterPic" src="">
+        <p id="resultDesc">Result here</p>
+        <button id="bReset" onclick="resetQuiz()">Back to Start</button>
+      </div>
+      <footer id="copyright">
+        <span id=special>@Copyright Mishaela Pedersen</span>
+      </footer>
+    </body>
+    </html>

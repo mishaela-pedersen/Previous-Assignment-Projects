@@ -1,0 +1,70 @@
+<html>
+<!-- This is the Character Gallery page. Here are all the profiles for <thead>
+  characters to be featured in the game.
+</thead> -->
+<head>
+  <Title>Danganronpa: Suffering's Symphony| Home Page</Title>
+  <link rel="stylesheet" type="text/css" href="css/about.css">
+  <script src="js/main.js" type="text/javascript"></script>
+  <script>
+    function openAccordion(){
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function toggleAcc(){
+
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+
+      }
+    }
+
+    }
+  </script>
+
+</head>
+<body>
+
+<div id = "container">
+
+  <header>
+    <img src="images/banner.png";alt="Danganronpa: Suffering's Symphony"; height: 20px;>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About the Game</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="quiz.html">Which DR:SS Character Are You?</a></li>
+    </ul>
+  </nav>
+  <div id="content">
+    <h1>About the Game</h1>
+    <button class="accordion" onclick="openAccordion()">About the Game</button>
+    <div class="panel">
+      <p>Danganronpa: Suffering's Symphony is a fanmade visual novel mystery game based off of the Danganronpa franchise owned by Spike Chunsoft.
+      You play as the game's Protagonist and interact with the world around you, usually within one specific place all of the students
+      are trapped in. After a murder occurs the rest of the students gather and participate in what's called a Class Trial, where everyone debates
+      using evidence and testimony who the murderer is. If the innocent students guess correctly, only the culprit (or the 'Blackened') gets punished.
+      If they guess incorrectly, then everyone BUT the culprit gets punished and that person gets to 'graduate', or escape the game. The games usually have six main chapters and trials, and a set number of survivors
+      by the end of the game. The 6th chapter is the final chapter where the mastermind of the game is revealed. All of the series' cast is consistent of a group of 16 students who all have unique special talents, known as 'Ultimates' (or 'Super High School Level Talent' in the original Japanese translation).</p>
+    </div>
+    <button class="accordion" onclick="openAccordion()">About the Story</button>
+    <div class="panel">
+      <p>You play as Michiru Tsukino, a student who awoke on the space station with no memory of what her Ultimate Talent is. Michiru and the 15 other students all
+          have no recollection of how, why, or when they arrived on the space station. Monokoro (pronounced Mohn-oh-core-oh) soon reveals that they are currently trapped on the space station with
+          no way out or to contact Earth. They are set to be trapped there for the rest of eternity, unless of course, someone wins the "Killing Game".
+          Unlike the official games its based off of, instead of immediate punishment, the culprit gets one last chance to escape by undergoing a monstrous transformation
+          and defeating the chosen champion of the student's choice. Rather than the game's normal punishment cutscenes.
+          The game is overall designed to be more family friendly for a wider general audience, instead of older teen and young adult audiences.</p>
+    </div>
+    <button class="accordion" onclick="openAccordion()">About the Engine</button>
+    <div class="panel" id="panel">
+      <p>The coding engine used for this game is the visualnovel engine Renpy, a free open source python engine designed for making interactive graphic novels,
+        or visual novels. However, a more complete and polished version with more mini games will be built using Unity at a later date.</p>
+    </div>
+  </div>
+</body>
+</html>

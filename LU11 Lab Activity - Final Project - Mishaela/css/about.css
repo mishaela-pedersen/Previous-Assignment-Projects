@@ -1,0 +1,98 @@
+/*This is the default style sheet for the website.*/
+
+@font-face { font-family: goodbyeDespair; src: url('goodbyeDespair.ttf'); }
+@font-face { font-family: Abel; src: url('Abel-Regular.ttf');}
+@font-face { font-family: DorBlue; src: url('Dorblue-vzE.ttf')}
+body{ background-repeat: repeat-x; background-color: #0d0033}
+  #container{color: #333; font-family: Abel; font-size:22px; width: 100%; height: 100%; margin: 5px}
+  #content {background-color: #ffffff; display:auto; padding: 10px; margin: 10px; height:100%;}
+    nav ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 5px;
+      overflow: hidden;
+      background-color: #330066;
+      font-family: goodbyeDespair;
+    }
+
+    nav li{
+      float:left;
+    }
+
+    nav li a{
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 7px 8px;
+      text-decoration: none;
+    }
+
+    nav li a:hover {
+      background-color: #cc0066;
+    }
+    nav .active {
+      background-color: #cc0066;
+    }
+
+    span {background-color: #cc0066}
+    nav {background-color: #330066; height:auto; color: #FFF, font-family: goodbyeDespair; padding: 0px; margin: 0px}
+    footer {background-color: #330066; height: auto; color:#FFF}
+    animation {display: block; float:right; align-content: center; padding-left: 50px; padding-right: 50px;}
+    #copyright {background-color: #cc0066; height:auto; color:#FFF}
+    h1 {font-size: 26; font-family: DorBlue; color: #ff0080}
+    h2 {font-size: 24; font-family: Abel}
+    title { font-size: 32px; font-family: DorBlue; color: #000000}
+    img.displayed {
+      display: block;
+      margin-left: auto;
+      margin-right: auto
+    }
+  button.accordion{
+    background-color: #cc0066;
+    color: #FFF;
+    cursor: pointer;
+    padding: 18px;
+    font-family: Abel;
+    width:100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  button.accordion.active,button.accordion:hover{
+    background-color: #99004d;
+    cursor: pointer;
+    padding: 15px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  div.panel{
+    padding: 0 18px;
+    background-color: #cc0066;
+    color: #FFF;
+    display: none;
+    font-family: Abel;
+    width: 100%;
+    text-align: left;
+  }
+  div.panel.show {
+      display: block !important;
+
+  }
+  /* button.accordion:after{
+    content:'\02795';
+    font-size: 14px;
+    color: #FFF;
+    float: right;
+    font-family: Abel;
+    margin-left:5px;
+  }
+
+  button.active:after{
+    color: #FFF;
+    content:"\2796";
+  } */

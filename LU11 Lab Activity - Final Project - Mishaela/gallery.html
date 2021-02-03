@@ -1,0 +1,144 @@
+<html>
+ <!-- This is the Character Gallery page. Here are all the profiles for <thead>
+   characters to be featured in the game.
+ </thead> -->
+<head>
+  <meta charset="utf-8">
+  <Title>Danganronpa: Suffering's Symphony| Character Gallery</Title>
+  <link rel="stylesheet" href="css/gallery.css"/>
+  <script src="js/jquery-3.4.1.min.js" charset="utf-8"></script>
+  <script src="js/lightbox.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/lightbox.css">
+
+
+
+  <style>
+  	"section" {
+  	background-color: #FFF;
+  	}
+  	.imageRow {
+      display: auto;
+  	}
+  	.imageRow .single {
+  	float: left;
+  	}
+  	.imageRow .single a {
+  	float: left;
+  	display: block;
+  	background-color: #FFF;
+  	padding: 7px;
+  	line-height: 0;
+  	margin-right: 40px;
+  	}
+  	.imageRow .single a:hover {
+  	background-color: #cc0066;
+  	}
+  </style>
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': false,
+      'fitImagesInViewport': true,
+      'disableScolling': true
+
+    })
+    // This code is what controls the sound effect when you click on an icon
+    function beepBoop(){
+        var audio = new Audio("gallery_effect2.wav");
+
+        audio.play();
+        
+
+
+    }
+
+
+  </script>
+
+</head>
+<body>
+
+<div id = "container";>
+
+  <header>
+    <img src="images/banner.png";alt="Danganronpa: Suffering's Symphony"; height: 20px;>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About the Game</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="quiz.html">Which DR:SS Character Are You?</a></li>
+    </ul>
+  </nav>
+
+  <div id = "content">
+
+      <h1> The Cast </h1>
+
+    <div class="section" id="gallery">
+      <div class="imageRow">
+        <div class="single">
+          <a href="images/Michiru Tsukino.png" rel="lightbox" data-lightbox="Michiru" data-title="Michiru Tsukino: Ultimate ??? (Unknown)"><img class="displayed" src="images/michiru-pixel.png" onclick="beepBoop()"/></a><p>Michiru<br>Tsukino<br>(The Protagonist)</p>
+          </a>
+
+        </div>
+
+        <div class="single">
+          <a href="images/Haruto Kudo.png" rel="lightbox" data-lightbox="Haruto" data-title="Haruto Kudo: Ultimate Model"><img class="displayed" src="images/haruto-pixel.png" onclick="beepBoop()"/>
+          </a><p>Haruto<br>Kudo</p>
+        </div>
+
+        <div class="single">
+          <!-- Chou's profile picture oddly takes a long time to load, so you might have to look at her profile inside the images folder in order to see it. -->
+          <a href="images/Chou Yamashita.png" rel="lightbox" data-lightbox="Chou" data-title="Chou Yamashita: Ultimte Harajuku Girl"><img class="displayed" src="images/chou-pixel.png" onclick="beepBoop()"/></a><p>Chou<br>Yamashita</p>
+          </a>
+        </div>
+
+        <div class="single">
+          <a href="images/Keiko Moto.png" rel="lightbox" data-lightbox="Keiko" data-title="Keiko Moto: Ultimate Rockstar"><img class="displayed" src="images/keiko-pixel.png" onclick="beepBoop()"/></a><p>Keiko<br>Moto</p>
+        </a>
+        </div>
+        <div class="single">
+          <a href="images/Yuuki Shimizu.png" rel="lightbox" data-lightbox="Yuuki" data-title="Yuuki Shimizu: Ultimate Carpenter"><img class="displayed" src="images/yuuki-pixel.png" onclick="beepBoop()"/></a>
+          <p>Yuuki<br>Shimizu</p>
+        </a>
+
+        </div>
+      </div>
+      <div>
+        <h2> More Characters Coming Soon! </h2>
+        <section>
+          <h2>Click on a pixel character icon to look at a Student File</h2>
+        </section>
+      </div>
+      <div class="one">
+        <div id="container">
+          <h1 id="section-head">Bonus Images</h1>
+        </div>
+        <table>
+              <tr>
+                <td>
+                <div class="imageRow">
+                  <div class="single">
+                    <a href="images/andromeda.jpg" rel="lightbox" data-lightbox="bonus" data-title="Andromeda: Ultimate Ancient Warrior (Michiru(Andromeda-controlled))"><img class="displayed" src="images/andromeda-thumb.jpg" onclick="beepBoop()"/></a><p>Andromeda's<br>Intro</p>
+                  </div>
+                </div></td>
+              </tr>
+
+        </table>
+
+
+        <div>
+          <h2>Bonus images from game development</h2>
+        </div>
+      </div>
+    <p id="disclaimer">Note: use of these images in other works are strictly prohibited.</p>
+
+
+    <footer id="copyright">
+      <ul>
+        <span id=special> @Copyright Mishaela Pedersen </span>
+      </ul>
+    </footer>

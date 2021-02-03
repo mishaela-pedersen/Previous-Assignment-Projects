@@ -1,0 +1,86 @@
+<html>
+	<head>
+	  <!-- /Below is the code for my Capstone Project: a mock game promotional
+	  website for my own WIP fan game - Danganronpa: Suffering's Symphony.
+	  It features a characters gallery, an 'About' page, and a brief personality
+	  quiz to match you with a character that you're the most like.
+	  Keep in mind that most of the characters, art, and storyline are my own original works
+	  so please do not share them without asking me first.
+
+	  Author: Mishaela Pedersen
+	  Date: 7/26/2020-->
+		<meta charset="utf-8">
+		<Title>Danganronpa: Suffering's Symphony| Home Page</Title>
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+		<!-- <script src = "js/main.js" type="text/javascript"/> -->
+		<script>
+				var flipVar = 0;
+
+				function displayGraphic(){
+					setInterval(flipGraphic,700);
+				}
+
+
+			  function flipGraphic(){
+			    switch(flipVar){
+			      case 0:
+			        flipVar = 1;
+			        document.getElementById("sprite").src = "images/frame1.png"
+							break;
+			      case 1:
+			        flipVar = 0;
+			        document.getElementById("sprite").src = "images/frame2.png";
+							break;
+			    }
+				}
+				function menuClick(){
+				  var audio = new Audio("menu.wav");
+				  audio.play();
+				}
+
+		</script>
+
+	</head>
+	<body onload="displayGraphic()">
+
+	<div id = "container";>
+
+	  <header>
+		<img src="images/banner.png";alt="Danganronpa: Suffering's Symphony"; height: 20px;>
+	  </header>
+
+	  <nav>
+		<ul>
+		  <li><a href="index.html" onmousedown="menuClick()">Home</a></li>
+		  <li><a href="about.html" onmousedown="menuClick()">About the Game</a></li>
+		  <li><a href="gallery.html" onmousedown="menuClick()">Gallery</a></li>
+		  <li><a href="quiz.html" onmousedown="menuClick()">Which DR:SS Character Are You?</a></li>
+		</ul>
+	  </nav>
+	  <div id="content">
+		<h1> Welcome to a Despair that's Outta This World! </h1>
+		<p1 title="Welcome"> Danganronpa just got a whole new twist in this fanmade game!</p1>
+		<p2> Explore the U.S.S Symphonia, a state-of-the-art space station training facility where
+		  specially selected students train for the upcoming mission to populate a newly discovered planet.<br>
+		  At least that was what the original purpose USED to be. Now, thanks to an uninvited guest,
+		  it's the stage for a deadly game of life-or-death where the only way out, is to kill and get away with it!<br> Will you be able to find the mastermind in time?<br> Let the Killing Game begin!</p2>
+		<h2> Gameplay </h2>
+		<ul style="list-style-type:square;">
+			<!-- The screenshots below are completely fake (as I have not started on coding a prototype of the game yet) but feature sprites that WILL be used in the actual gameplay and give you an idea of the mechanics of it. -->
+		  <li>Progress through a deep twisting plotline in visual novel format!</li>
+		  <li>Find clues through point-and-click crime scene investigations!</li>
+		  <li>Uncover the culprit in the class trials, and shoot down contradictions with Truth Bullets!</li>
+			<img src="images/fakescreenshot-1.jpg"><img src="images/fakescreenshot-2.png">
+		  <li>Battle the 'Blackened' in an action-packed turn-based battle system!</li>
+			<li>Get to know your classmates and build your relationships through Free Time Events!</li>
+		</ul>
+		<h2> The interstellar battle between hope and despair is on! </h2><br>
+		<div id="animation">
+		  <img class="displayed" id = "sprite"; src="images/frame1.png"/>
+		</div>
+
+	  </div>
+
+	  </body>
+
+</html>
