@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--Mishaela Pedersen 11-25-2020 -->
+<!-- XML file for Project 1-->
+<characters>
+	<character>
+		<name>Michiru Tsukino</name>
+		<age>16</age>
+		<gender>Female</gender>
+		<creator>Mishaela</creator>
+		<desc>The main protagonist of the fan game Danganronpa Suffering's Symphony</desc>
+		<fanmade>True</fanmade>
+	</character>
+	<character>
+		<name>Elizabeth 'Liz'</name>
+		<age>16</age>
+		<gender>Female</gender>
+		<creator>Mishaela</creator>
+		<desc>The main protagonist of the visual novel Twisted Clocks</desc>
+		<fanmade>False</fanmade>
+	</character>
+</characters>
